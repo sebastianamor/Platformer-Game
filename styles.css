@@ -5,9 +5,9 @@
   }
   
   :root {
-    --main-bg-color: #0a0a23;
+    --main-bg-color: #16169b;
     --section-bg-color: #ffffff;
-    --golden-yellow: #feac32;
+    --red-: #c91a32;
   }
   
   body {
@@ -42,11 +42,11 @@
     cursor: pointer;
     width: 100px;
     margin: 10px;
-    color: #0a0a23;
+    color:  #16169b;
     font-size: 18px;
-    background-color: var(--golden-yellow);
+    background-color: var(--red-);
     background-image: linear-gradient(#fecc4c, #ffac33);
-    border-color: var(--golden-yellow);
+    border-color: var(--red-);
     border-width: 3px;
   }
   
