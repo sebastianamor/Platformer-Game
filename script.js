@@ -56,3 +56,42 @@ const proportionalSize = (size) => {
       }
     }
   }
+
+  
+class Platform {
+  constructor(x, y) {
+    this.position = {
+      x,
+      y,
+    };
+    this.width = 200;
+    this.height = proportionalSize(40);
+  }
+  draw() {
+    ctx.fillStyle = "#acd157";
+    ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
+  }
+}
+
+class CheckPoint {
+  constructor(x, y, z) {
+    this.position = {
+      x,
+      y,
+    };
+    this.width = proportionalSize(40);
+    this.height = proportionalSize(70);
+    this.claimed = false;
+  };
+
+  draw() {
+    ctx.fillStyle = "#f1be32";
+    ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
+  }
+  claim() {
+    this.width = 0;
+    this.height = 0;
+    this.position.y = Infinity;
+    this.claimed = true;
+  }
+};
